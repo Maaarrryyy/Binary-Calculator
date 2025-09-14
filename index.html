@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <div class="bg"></div>
+    <div class="main">
+      <h1 class="title">Binary Calculator</h1>
+      <form name="form">
+        <input id="res" type="text" disabled class="textview" name="textview" />
+      </form>
+      <table>
+        <tr>
+          <td>
+            <input
+              class="button"
+              type="button"
+              value="0"
+              onclick="insert('0')"
+            />
+          </td>
+          <td>
+            <input
+              class="button"
+              type="button"
+              value="1"
+              onclick="insert('1')"
+            />
+          </td>
+          <td>
+            <input
+              class="button"
+              type="button"
+              value="C"
+              onclick="clearInput()"
+            />
+          </td>
+          <td>
+            <input
+              class="button"
+              type="button"
+              value="="
+              onclick="calculate()"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              class="button"
+              type="button"
+              value="+"
+              onclick="insert('+')"
+            />
+          </td>
+          <td>
+            <input
+              class="button"
+              type="button"
+              value="-"
+              onclick="insert('-')"
+            />
+          </td>
+          <td>
+            <input
+              class="button"
+              type="button"
+              value="*"
+              onclick="insert('*')"
+            />
+          </td>
+          <td>
+            <input
+              class="button"
+              type="button"
+              value="/"
+              onclick="insert('/')"
+            />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <script type="module" src="JS/main.js"></script>
+  </body>
+</html>
